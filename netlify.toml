@@ -1,0 +1,15 @@
+# Static site — no build step. Netlify serves the repo root as-is.
+[build]
+  publish = "."
+  command = ""
+
+# Light caching: HTML revalidated, static assets cached a day.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

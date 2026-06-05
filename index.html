@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louis Rambaldi — Assistant Director</title>
+  <meta name="description" content="Louis Rambaldi — Assistant Director, Paris. Selected work in Fashion, Beauty, Commercial, Comedy, Feature Films and Music Videos." />
+  <meta property="og:title" content="Louis Rambaldi — Assistant Director" />
+  <meta property="og:description" content="Selected work — Fashion · Beauty · Commercial · Comedy · Feature Films · Music Videos." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23121212'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='50' fill='%23f4f3f1' text-anchor='middle'%3ELR%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-view="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────── HEADER ───────── -->
+  <header class="hdr" id="hdr">
+    <a class="hdr__brand" href="#home" data-home aria-label="Louis Rambaldi — home">
+      <span class="hdr__name">Louis Rambaldi</span>
+      <span class="hdr__role">Assistant Director</span>
+    </a>
+
+    <div class="hdr__nav">
+      <label class="select" for="catSelect">
+        <span class="select__label">Category</span>
+        <select id="catSelect" aria-label="Choose a category">
+          <option value="selected">Home</option>
+          <option value="fashion">Fashion</option>
+          <option value="beauty">Beauty</option>
+          <option value="commercial">Commercial</option>
+          <option value="comedy">Comedy</option>
+          <option value="feature-films">Feature Films</option>
+          <option value="music-videos">Music Videos</option>
+        </select>
+      </label>
+      <a class="hdr__info" href="#info">Info</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────── HOME ───────── -->
+    <section class="home" id="home">
+      <div class="hero">
+        <h1 class="hero__title">Louis&nbsp;Rambaldi</h1>
+        <p class="hero__sub">Assistant Director — Paris</p>
+        <p class="hero__hint">Choose a category to preview the work, then enter to explore.</p>
+      </div>
+
+      <!-- clients (above the first video) -->
+      <section class="clients" aria-label="Brands and productions">
+        <div class="clients__row">
+          <span class="clients__h">Brands I worked with</span>
+          <div class="marquee"><div class="marquee__track" id="brandsTrack"></div></div>
+        </div>
+        <div class="clients__row">
+          <span class="clients__h">Production companies that trusted me</span>
+          <div class="marquee marquee--rev"><div class="marquee__track" id="prodsTrack"></div></div>
+        </div>
+      </section>
+
+      <!-- single rotating preview -->
+      <figure class="feat" id="feat">
+        <div class="feat__media" id="featMedia" role="button" tabindex="0" aria-label="Open category">
+          <span class="feat__mount" id="featMount"></span>
+          <button class="feat__nav feat__nav--prev" id="featPrev" type="button" aria-label="Previous project">&lsaquo;</button>
+          <button class="feat__nav feat__nav--next" id="featNext" type="button" aria-label="Next project">&rsaquo;</button>
+        </div>
+        <figcaption class="feat__bar">
+          <span class="feat__cat" id="featCat">Selected</span>
+          <span class="feat__proj" id="featProj"></span>
+          <button class="feat__enter" id="featEnter" type="button">Enter <span aria-hidden="true">→</span></button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ───────── CATEGORY ───────── -->
+    <section class="cat" id="cat" hidden>
+      <div class="cat__head">
+        <h2 class="cat__title" id="catTitle">Category</h2>
+        <span class="cat__count" id="catCount"></span>
+      </div>
+      <div class="rows" id="rows"><!-- two-up cards injected --></div>
+      <p class="cat__empty" id="catEmpty" hidden>Selected work in this category is on its way.</p>
+    </section>
+
+    <!-- ───────── INFO ───────── -->
+    <section class="info" id="info" aria-label="Biography and contact">
+      <div class="info__col">
+        <div class="bio__head">
+          <h2 class="info__h">Biography</h2>
+          <div class="bio__lang" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="is-active">EN</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang="fr">FR</button>
+          </div>
+        </div>
+        <div class="bio" data-lang-text="en">
+          <p>First and second assistant director, I support advertising, fashion, luxury, music-video and fiction productions, in France and internationally. My experience was built on demanding shoots with intense logistics and organisation: double units, large crowd scenes, international talent, children, special effects, stunts, film stock and specific technical set-ups.</p>
+          <p>Committed to rigour, anticipation and a smooth set, I create an optimal working environment so the directing and the creative vision can develop in the best possible conditions.</p>
+          <p>Over ten years in the field — fluent liaison with artists, producers and clients; strong organisation and problem-solving; discretion with high-profile talent; and a close familiarity with crews, from photographers and stylists to set designers, hair and make-up. Available for flexible hours and international travel. Fluent French and English.</p>
+        </div>
+        <div class="bio" data-lang-text="fr" hidden>
+          <p>Premier / second assistant réalisateur, j'accompagne des productions publicitaires, mode, luxe, clip et fiction, en France comme à l'international. Mon expérience s'est construite sur des tournages exigeants, à forte intensité logistique et organisationnelle : double plateau, grosse figuration, talents internationaux, enfants, effets spéciaux, cascades, pellicule et dispositifs techniques spécifiques.</p>
+          <p>Attaché à la rigueur, à l'anticipation et à la fluidité du plateau, je veille à créer un cadre de travail optimal permettant à la mise en scène et à l'artistique d'évoluer dans les meilleures conditions possibles.</p>
+          <p>Plus de dix ans de métier — liaison fluide avec les artistes, producteurs et clients ; sens de l'organisation et de la résolution de problèmes ; discrétion avec les talents de premier plan ; et une connaissance fine des équipes, des photographes et stylistes aux chefs décorateurs, coiffure et maquillage. Disponible en horaires flexibles et en déplacement à l'international. Français et anglais courants.</p>
+        </div>
+      </div>
+      <div class="info__col">
+        <h2 class="info__h">Contact</h2>
+        <ul class="info__contact">
+          <li><a href="mailto:louisrambaldi@gmail.com">louisrambaldi@gmail.com</a></li>
+          <li><a href="tel:+33611108704">+33 6 11 10 87 04</a></li>
+          <li>Paris, France</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <span>© <span id="year"></span> Louis Rambaldi</span>
+    <a href="#home" data-home>Back to top ↑</a>
+  </footer>
+
+  <!-- ───────── MODAL ───────── -->
+  <div class="modal" id="modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" data-close aria-label="Close">Close ✕</button>
+      <div class="modal__media" id="modalMedia"></div>
+      <div class="modal__info">
+        <p class="modal__brand" id="modalBrand"></p>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+        <dl class="modal__credits" id="modalCredits"></dl>
+        <a class="modal__source" id="modalSource" target="_blank" rel="noopener">View original ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
