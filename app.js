@@ -137,9 +137,10 @@
     var has=pool(state.cat).filter(function(p){return media(p).kind!=="none";});
     if(!has.length)has=pool(state.cat);
     if(state.cat==="selected"){
-      var zara=has.filter(function(p){return p.id==="zara-aw23";});
-      featList=arrange(has.filter(function(p){return p.id!=="zara-aw23";}));
-      if(zara.length)featList.unshift(zara[0]);
+      var PIN=["zara-aw23","cartier-watches-wonders"];
+      var pinned=PIN.map(function(id){return has.filter(function(p){return p.id===id;})[0];}).filter(Boolean);
+      featList=arrange(has.filter(function(p){return PIN.indexOf(p.id)<0;}));
+      for(var pi=pinned.length-1;pi>=0;pi--)featList.unshift(pinned[pi]);
     }else{featList=arrange(has);}
     featIdx=0;featCat.textContent=(state.cat==="selected"?"":label(state.cat));if(featProj)featProj.textContent="";
     showFeatured();
