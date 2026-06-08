@@ -48,6 +48,7 @@
   function galleryImages(p){return (p.images&&p.images.length>1)?p.images:null;}
   function campaignName(p){var t=(p.title||"").trim();return GENERIC[t.toLowerCase()]?"":t;}
   function byline(p){var c=p.credits||[],pref=["Director","Photographer","Creative Direction","Creative Director"],r,i;for(r=0;r<pref.length;r++)for(i=0;i<c.length;i++)if(c[i].role===pref[r]&&c[i].name)return c[i].name;return "";}
+  function shortRole(r){if(!r)return "";return r.replace(/First /,"1st ").replace(/Second /,"2nd ").replace(/Third /,"3rd ").replace("Assistant Director","AD");}
 
   function media(p){
     var host=null,id=null,hsh=null;
@@ -145,7 +146,7 @@
   }
   function showFeatured(){
     clearFeatSlides();
-    Array.prototype.forEach.call(featMedia.querySelectorAll(".cap,.card__yeartag"),function(n){n.remove();});
+    Array.prototype.forEach.call(featMedia.querySelectorAll(".cap,.card__yeartag,.card__roletag"),function(n){n.remove();});
     featMount.innerHTML="";featMedia.classList.remove("is-poster");
     var p=featList[featIdx];if(!p)return;
     var m=media(p),gal=galleryImages(p);
@@ -162,6 +163,7 @@
     }
     if(!isFilm(p))featMedia.appendChild(capEl(p));
     if(p.year)featMedia.appendChild(el("span","card__yeartag",p.year));
+    if(p.role)featMedia.appendChild(el("span","card__roletag",shortRole(p.role)));
     featMedia._project=p;
   }
   function manualNav(d){if(!featList.length)return;featIdx=(featIdx+d+featList.length)%featList.length;showFeatured();}
@@ -184,6 +186,7 @@
     var mount=el("span","card__mount");box.appendChild(mount);
     if(!film)box.appendChild(capEl(p));
     if(p.year)box.appendChild(el("span","card__yeartag",p.year));
+    if(p.role)box.appendChild(el("span","card__roletag",shortRole(p.role)));
     var hit=el("button","card__hit");hit.type="button";
     hit.setAttribute("aria-label",p.brand+" — "+p.title+". Open details.");
     hit.addEventListener("click",function(){openModal(p);});

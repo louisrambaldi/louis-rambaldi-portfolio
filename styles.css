@@ -108,6 +108,7 @@ ul{margin:0;padding:0;list-style:none}
 .cap__camp{font-size:clamp(11px,1vw,13px);letter-spacing:.14em;text-transform:uppercase;opacity:.95;margin-top:5px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .cap__by{font-size:clamp(10px,.9vw,12px);letter-spacing:.06em;opacity:.82;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .card__yeartag{position:absolute;top:13px;right:15px;z-index:2;pointer-events:none;font-size:11px;letter-spacing:.12em;color:#fff;opacity:.85;font-variant-numeric:tabular-nums;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.card__roletag{position:absolute;top:13px;left:15px;z-index:2;pointer-events:none;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92;text-shadow:0 1px 8px rgba(0,0,0,.55)}
 
 /* film poster cards — portrait, never distorted (full poster, true ratio) */
 .card--poster .card__media{aspect-ratio:2/3}

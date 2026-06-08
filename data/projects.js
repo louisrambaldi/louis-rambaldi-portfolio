@@ -28,7 +28,7 @@ window.PROJECTS = [
     brand: "Dior",
     category: "Beauty",
     year: "2024",
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Director", name: "Bardia Zeinali" },
@@ -49,7 +49,7 @@ window.PROJECTS = [
     brand: "Dior",
     category: "Fashion",
     year: "SS26",
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Creative Director", name: "Jonathan Anderson" },
@@ -67,7 +67,7 @@ window.PROJECTS = [
     brand: "Dior",
     category: "Fashion",
     year: "FW26",
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Creative Director", name: "Jonathan Anderson" },
@@ -87,7 +87,7 @@ window.PROJECTS = [
     brand: "L’Oréal Paris",
     category: "Beauty",
     year: null,
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Cast", name: "Cara Delevingne" }
@@ -97,19 +97,16 @@ window.PROJECTS = [
   },
 {
     id: "loreal-mugler-kendall",
-    title: "Kendall Jenner",
+    title: "× Mugler — Kendall Jenner",
     brand: "L’Oréal Paris",
     category: "Beauty",
     year: null,
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
-    credits: [
-  {"role":"Director","name":"Christian Larsson"},
-      { role: "Cast", name: "Kendall Jenner" }
-    ],
+    credits: [{"role":"Director","name":"Colin Solal Cardo"},{"role":"Production","name":"La Pac"},{"role":"Cast","name":"Kendall Jenner"}],
     description: "L’Oréal Paris × Mugler collaboration film featuring Kendall Jenner.",
-    link: "https://vimeo.com/948752727",
-  "video": "vimeo:948752727",
+    link: "https://www.youtube.com/watch?v=xuMv6_OX1Wk",
+  "video": "youtube:xuMv6_OX1Wk",
   "img": "https://www.datocms-assets.com/59774/1718793640-loreal-kjenner-panorama-2.jpg",
   "hoverplay": true
 },
@@ -119,7 +116,7 @@ window.PROJECTS = [
     brand: "Cartier",
     category: "Beauty",
     year: null,
-    role: "Assistant Director",
+    role: "1st Assistant Director",
     media: "image",
     credits: [
       { role: "Production", name: "Mazarine Image" },
@@ -135,7 +132,7 @@ window.PROJECTS = [
     brand: "Chloé",
     category: "Fashion",
     year: null,
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Photographer", name: "Sam Rock" },
@@ -151,7 +148,7 @@ window.PROJECTS = [
     brand: "Sonia Rykiel",
     category: "Fashion",
     year: "2024",
-    role: "Assistant Director",
+    role: "1st Assistant Director",
     media: "image",
     credits: [
       { role: "Director", name: "Milena Pasina" },
@@ -167,7 +164,7 @@ window.PROJECTS = [
     brand: "Balenciaga",
     category: "Fashion",
     year: "SS24",
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Photographer", name: "Tyler Mitchell" },
@@ -183,7 +180,7 @@ window.PROJECTS = [
     brand: "Balenciaga",
     category: "Fashion",
     year: "SS24",
-    role: "Assistant Director",
+    role: "2nd Assistant Director",
     media: "image",
     credits: [
       { role: "Photographer", name: "Tyler Mitchell" },
@@ -200,7 +197,7 @@ window.PROJECTS = [
     brand: "Dior",
     category: "Beauty",
     year: "2026",
-    role: "Assistant Director",
+    role: "1st AD · B-Unit",
     media: "image",
     credits: [],
     description: "Dior skincare film for the D-Line invisible UV protection range.",
@@ -1291,7 +1288,7 @@ window.PROJECTS = [
   "title": "Holiday — Circus of Dreams",
   "brand": "Dior",
   "category": "Commercial",
-  "role": "Assistant Director",
+  "role": "1st AD · B-Unit",
   "media": "image",
   "credits": [],
   "description": "Dior Holiday « Circus of Dreams » campaign film.",
@@ -1438,5 +1435,84 @@ window.PROJECTS = [
   "link": "https://www.youtube.com/watch?v=gmzoNurteWs",
   "video": "youtube:gmzoNurteWs",
   "featured": true
+},
+{
+  "id": "dior-jadore-intense",
+  "title": "J'adore Intense",
+  "brand": "Dior",
+  "category": "Beauty",
+  "role": "2nd Assistant Director",
+  "media": "image",
+  "credits": [
+    {
+      "role": "Director",
+      "name": "Nans Noiron"
+    },
+    {
+      "role": "DoP",
+      "name": "Frank Noël"
+    },
+    {
+      "role": "Production",
+      "name": "1718"
+    }
+  ],
+  "description": "Dior — J'adore Intense.",
+  "link": "https://www.youtube.com/watch?v=WPfx3lBPlIg",
+  "video": "youtube:WPfx3lBPlIg"
+},
+{
+  "id": "cartier-watches-wonders",
+  "title": "Watches & Wonders 2026",
+  "brand": "Cartier",
+  "category": "Beauty",
+  "year": "2026",
+  "role": "2nd Assistant Director",
+  "media": "image",
+  "credits": [
+    {
+      "role": "Production",
+      "name": "Prodigious"
+    }
+  ],
+  "description": "Cartier — Watches & Wonders 2026.",
+  "link": "https://www.youtube.com/watch?v=hi0gVlaXzcQ",
+  "video": "youtube:hi0gVlaXzcQ"
+},
+{
+  "id": "les-femmes-du-square",
+  "title": "Feature Film",
+  "brand": "Les femmes du square",
+  "category": "Feature Films",
+  "year": "2022",
+  "role": "Extras Coordinator",
+  "media": "image",
+  "credits": [
+    {
+      "role": "Director",
+      "name": "Julien Rambaldi"
+    }
+  ],
+  "description": "Feature film, directed by Julien Rambaldi.",
+  "link": "https://www.imdb.com/title/tt13136332/",
+  "img": "https://image.tmdb.org/t/p/w780/8ksyjPxZ3aEgZYQX1Bw1LBkE7ns.jpg"
+},
+{
+  "id": "les-jeunes-amants",
+  "title": "Feature Film",
+  "brand": "Les Jeunes Amants",
+  "category": "Feature Films",
+  "year": "2021",
+  "role": "Extras Coordinator",
+  "media": "image",
+  "credits": [
+    {
+      "role": "Director",
+      "name": "Carine Tardieu"
+    }
+  ],
+  "description": "Feature film, directed by Carine Tardieu.",
+  "link": "https://www.imdb.com/title/tt13462472/",
+  "img": "https://image.tmdb.org/t/p/w780/tE0vxFfdhO4d67uYpaesVHZrajs.jpg"
 }
 ];
