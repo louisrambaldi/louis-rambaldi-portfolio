@@ -239,8 +239,14 @@
   });
   function enter(){if(state.cat==="selected"){var p=featList[featIdx];if(p)openModal(p);}else{openCat(state.cat);}}
   document.getElementById("featEnter").addEventListener("click",enter);
-  featMedia.addEventListener("click",enter);
+  var _swiped=false;
+  featMedia.addEventListener("click",function(){if(_swiped){_swiped=false;return;}enter();});
   featMedia.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();enter();}});
+  /* mobile swipe: drag left/right on the selection to change video */
+  (function(){var x0=0,y0=0,t=false;
+    featMedia.addEventListener("touchstart",function(e){if(!e.touches||!e.touches.length)return;x0=e.touches[0].clientX;y0=e.touches[0].clientY;t=true;},{passive:true});
+    featMedia.addEventListener("touchend",function(e){if(!t)return;t=false;var c=(e.changedTouches&&e.changedTouches[0]);if(!c)return;var dx=c.clientX-x0,dy=c.clientY-y0;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.4){_swiped=true;manualNav(dx<0?1:-1);}},{passive:true});
+  })();
   if(featPrev)featPrev.addEventListener("click",function(e){e.stopPropagation();manualNav(-1);});
   if(featNext)featNext.addEventListener("click",function(e){e.stopPropagation();manualNav(1);});
   Array.prototype.forEach.call(document.querySelectorAll("[data-home]"),function(a){a.addEventListener("click",function(e){e.preventDefault();goHome();});});
