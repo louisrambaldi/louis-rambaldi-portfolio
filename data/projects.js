@@ -1251,6 +1251,7 @@ window.PROJECTS = [
   "year": "2026",
   "role": "1st Assistant Director",
   "media": "image",
+  "featured": true,
   "credits": [
     {
       "role": "Production",
