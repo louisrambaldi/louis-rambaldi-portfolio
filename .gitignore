@@ -6,3 +6,6 @@
 *.log
 .cache/
 .gstack/
+
+# Visuels sources bruts (non optimises) — gardes en local, hors depot
+NIKE/

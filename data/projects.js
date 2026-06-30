@@ -1245,21 +1245,22 @@ window.PROJECTS = [
 },
 {
   "id": "nike-air-afrique",
-  "title": "× Air Afrique",
+  "title": "× Air Afrique — Air Max RK61",
   "brand": "Nike",
   "category": "Commercial",
-  "year": "2025",
+  "year": "2026",
   "role": "1st Assistant Director",
   "media": "image",
   "credits": [
     {
       "role": "Production",
-      "name": "Iconoclast"
+      "name": "Aswan × Iconoclast"
     }
   ],
-  "description": "Nike × Air Afrique campaign.",
+  "description": "Nike × Air Afrique — Air Max RK61 campaign. A tribute to diasporic heritage.",
   "link": "https://www.maarsmagazine.com/articles/nike-x-air-afrique-quand-la-sneaker-prend-le-tournant-du-mocassin",
-  "img": "https://images.squarespace-cdn.com/content/v1/65ba80661aa63657d5cf9da6/99d2b72a-e12c-41be-aa78-00973ae50e71/nike-air-afrique-drogba-air-max-rk61-sneaker-mocassin-snoafer.webp?format=2500w"
+  "img": "assets/img/nike-air-afrique/01.jpg",
+  "images": ["assets/img/nike-air-afrique/01.jpg", "assets/img/nike-air-afrique/02.jpg", "assets/img/nike-air-afrique/03.jpg", "assets/img/nike-air-afrique/04.jpg", "assets/img/nike-air-afrique/05.jpg", "assets/img/nike-air-afrique/06.jpg", "assets/img/nike-air-afrique/07.jpg", "assets/img/nike-air-afrique/08.jpg", "assets/img/nike-air-afrique/09.jpg", "assets/img/nike-air-afrique/10.jpg", "assets/img/nike-air-afrique/11.jpg", "assets/img/nike-air-afrique/12.jpg", "assets/img/nike-air-afrique/13.jpg", "assets/img/nike-air-afrique/14.jpg"]
 },
 {
   "id": "korloff",
